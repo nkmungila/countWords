@@ -1,13 +1,18 @@
 // This program search the given word in the given file and giving you how many times
 // the given word appears in the file. It will search in exact case.
-const {readFileSync, promises: fsPromises} = require('fs');
+const {readFileSync} = require('fs');
 
-const fileName = 'sample.txt'
-const findword = 'one'
-const filecontent = syncReadFile(fileName);
-const wordsInFile = getWords(filecontent)
-const occurence = occurenceInFile(wordsInFile,findword)
-console.log("In the given file the word "+findword+' occured '+occurence+" times. ")
+
+
+const run = () =>{
+    const fileName = 'sample.txt'
+    const findword = 'one'
+    const filecontent = syncReadFile(fileName);
+    const wordsInFile = getWords(filecontent)
+    const occurence = occurenceInFile(wordsInFile,findword)
+    console.log("In the given file the word "+findword+' occured '+occurence+" times. ")
+}
+
 
 function syncReadFile(filename) {
   try{
@@ -33,3 +38,5 @@ function occurenceInFile(listOfWord,findWord){
 })
     return count
 }
+
+run();

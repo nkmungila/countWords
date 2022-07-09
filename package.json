@@ -1,0 +1,21 @@
+{
+  "name": "wordcount",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WordOccurence.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node WordOccurence.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkmungila/countWords.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkmungila/countWords/issues"
+  },
+  "homepage": "https://github.com/nkmungila/countWords#readme"
+}
