@@ -3,7 +3,7 @@
 const {readFileSync, promises: fsPromises} = require('fs');
 
 const fileName = 'sample.txt'
-const findword = 'Hello'
+const findword = 'one'
 const filecontent = syncReadFile(fileName);
 const wordsInFile = getWords(filecontent)
 const occurence = occurenceInFile(wordsInFile,findword)
