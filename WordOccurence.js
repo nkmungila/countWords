@@ -13,6 +13,7 @@ const run = () =>{
 
 const syncReadFile = (filename)=>{
   try{
+        filehandle = await fsPromises.open(filename, 'r');
         const contents = readFileSync(filename, 'utf-8');
         return contents;
     } catch(e){
